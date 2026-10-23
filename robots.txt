@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://associacao-pescadores-bombinhas.vercel.app/sitemap.xml
+Sitemap: https://douglas-herrera-bombinhas.vercel.app/sitemap.xml
