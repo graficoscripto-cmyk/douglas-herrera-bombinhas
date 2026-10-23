@@ -36,8 +36,9 @@
   <meta name="twitter:description" content="Ilha do Macuco com leões-marinhos e mergulho na Praia do Cação saindo do Trapiche de Canto Grande.">
   <meta name="twitter:image" content="https://douglas-herrera-bombinhas.vercel.app/img/og-cover.jpg">
 
-  <!-- Preload Hero 4K -->
-  <link rel="preload" as="image" href="img/hero-barco-4k.webp" type="image/webp" fetchpriority="high">
+  <!-- Preload Hero 4K (Mobile Vertical 9:16 + Desktop 16:9) -->
+  <link rel="preload" as="image" href="img/hero-ilha-barco-mobile.webp" media="(max-width: 768px)" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="img/hero-ilha-barco-desktop.webp" media="(min-width: 769px)" type="image/webp" fetchpriority="high">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -422,9 +423,15 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 44%;
+      object-position: center top;
       filter: saturate(1.1) contrast(1.04);
       will-change: transform;
+    }
+
+    @media (min-width: 769px) {
+      .hero-media img {
+        object-position: center 48%;
+      }
     }
 
     .hero-scrim {
@@ -434,9 +441,9 @@
       background:
         linear-gradient(
           180deg,
-          rgba(3, 18, 28, 0.24) 0%,
-          rgba(3, 18, 28, 0.04) 40%,
-          rgba(3, 18, 28, 0.82) 76%,
+          rgba(3, 18, 28, 0.16) 0%,
+          rgba(3, 18, 28, 0.02) 52%,
+          rgba(3, 18, 28, 0.80) 78%,
           var(--abyss) 100%
         );
     }
@@ -1884,8 +1891,10 @@
   <section class="hero" id="topo">
     <div class="hero-media">
       <picture>
-        <source srcset="img/hero-barco-4k.webp" type="image/webp">
-        <img src="img/hero-barco-4k.jpg" alt="Barco tradicional da Associação de Pescadores ancorado nas águas verde-esmeralda de Bombinhas - SC" width="3840" height="2160" fetchpriority="high" decoding="async" id="heroImg">
+        <source media="(max-width: 768px)" srcset="img/hero-ilha-barco-mobile.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="img/hero-ilha-barco-mobile.jpg" type="image/jpeg">
+        <source srcset="img/hero-ilha-barco-desktop.webp" type="image/webp">
+        <img src="img/hero-ilha-barco-desktop.jpg" alt="Vista aérea de barco tradicional em águas cristalinas verde-esmeralda na Ilha do Macuco em Bombinhas - SC" width="3840" height="2160" fetchpriority="high" decoding="async" id="heroImg">
       </picture>
     </div>
     <div class="hero-scrim"></div>
