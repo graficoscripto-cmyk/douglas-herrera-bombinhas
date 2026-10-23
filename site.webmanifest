@@ -1,0 +1,16 @@
+{
+  "name": "Passeio de Barco — Associação de Pescadores de Canto Grande (Bombinhas - SC)",
+  "short_name": "Pescadores Bombinhas",
+  "description": "Passeios de barco tradicionais saindo do Trapiche de Canto Grande em Bombinhas - SC: Ilha do Macuco, Praia do Cação, Praia da Tainha e Baía de Zimbros.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#04152D",
+  "theme_color": "#06285E",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
